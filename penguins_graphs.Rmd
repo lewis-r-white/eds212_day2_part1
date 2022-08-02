@@ -27,7 +27,11 @@ ggplot(data=penguins, aes(x = body_mass_g , y = flipper_length_mm)) +
 ##aes is used for mapping variables
 
 ggplot(data=penguins, aes(x = body_mass_g , y = flipper_length_mm)) +
-  geom_point(aes(color = species), size = 4)
+  geom_point(aes(color = species), size = 1.5) + 
+  facet_wrap(~island) +
+  labs(x = "Body Mass (g)",
+       y = "Flipper Length (mm)", 
+       title = "Flipper Length and Body Mass")
 
 ## can change size to non variable outside of aes
 ```
