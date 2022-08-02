@@ -7,6 +7,29 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+
+head(penguins) - shows first 5 lines
+glimpse(penguins) 
+tail(penguins) - shows last 5 lines
+
+
+
+scatterplot of bodymass vs flipper length
+
+```{r}
+ggplot(data=penguins, aes(x = body_mass_g , y = flipper_length_mm)) +
+  geom_point(aes(color = species))
+
+##aes is used for mapping variables
+
+ggplot(data=penguins, aes(x = body_mass_g , y = flipper_length_mm)) +
+  geom_point(aes(color = species), size = 4)
+
+## can change size to non variable outside of aes
 ```
 
 
