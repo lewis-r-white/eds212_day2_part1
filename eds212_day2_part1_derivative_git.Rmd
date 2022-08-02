@@ -44,3 +44,14 @@ eval(dg_dz)
 ```
 
 
+## using git
+usethis::use_git made a version controlled project
+
+usethis:use_githup creates a remote repository
+
+github is main place where developers working. unlikely to fail, so much safer to store work there. 
+
+
+local git repo saves changes like a version history document. github stores it in the cloud. 
+
+Staging: "this is the file that I'd like to send to my local git repo"
