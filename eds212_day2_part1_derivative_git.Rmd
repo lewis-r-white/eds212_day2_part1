@@ -51,7 +51,15 @@ usethis:use_githup creates a remote repository
 
 github is main place where developers working. unlikely to fail, so much safer to store work there. 
 
-
 local git repo saves changes like a version history document. github stores it in the cloud. 
 
 Staging: "this is the file that I'd like to send to my local git repo"
+
+"your branch is ahead of 'origin/master' by 1 commit." ---- this means it isn't saved to github repo. 
+
+Pushing the changes sends the changes to the github repo. sends the changes from local repo to the github one. 
+=> the green arrow.
+
+
+*Testing changes + pushing work
+
